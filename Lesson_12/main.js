@@ -235,9 +235,9 @@ let usersArr = [
 function renderUsers (users) {
     users.forEach(user => {
         let element = document.createElement('div');
-        element.innerHTML = `<h1>${user.id} ${user.name}</h1> \n <p>${user.address}</p>`;
+        element.innerHTML = `<h1 id="h1">${user.id} ${user.name}</h1> <p id="inners">${user.username} <br> ${user.email} </p>`;
         document.body.appendChild(element);
     });
-};
+}
 
 renderUsers(usersArr);
